@@ -2,4 +2,4 @@
 
 string = ARGV[0]
 
-puts string if string =~ /School/
+puts string.scan(/School/)
