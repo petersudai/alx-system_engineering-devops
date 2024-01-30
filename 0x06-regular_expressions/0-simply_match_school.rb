@@ -2,7 +2,7 @@
 
 string = ARGV[0]
 
-pattern = /\bSchool\b/
+pattern = /\bSchool\b/i
 
 if string =~ pattern
   puts string
