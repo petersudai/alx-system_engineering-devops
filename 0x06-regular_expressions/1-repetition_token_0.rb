@@ -2,7 +2,7 @@
 
 string = ARGV[0]
 
-pattern = /hb*t+n/
+pattern = /hbt{2,5}n/
 
 if string =~ pattern
   puts string
