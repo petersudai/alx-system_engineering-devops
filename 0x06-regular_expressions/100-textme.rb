@@ -9,5 +9,5 @@ text_messages.each do |line|
   receiver = line.match(/\[to:(\+?\w+)\]/)&.captures&.first
   flags = line.match(/\[flags:(-?\d:-?\d:-?\d:-?\d:-?\d)\]/)&.captures&.first
 
-  puts "#{sender},#{receiver},#{flags}" if sender && receiver && flags
+  puts "#{sender},#{receiver},#{flags}"
 end
