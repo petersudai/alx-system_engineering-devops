@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #a Bash script that pings an IP address entered over 5 times
-if [ $1 -eq 0 ]
+if [ "$1 -eq 0" ]
 then
 ping -c 5 "$1"
 else
