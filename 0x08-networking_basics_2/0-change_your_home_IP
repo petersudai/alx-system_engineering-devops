@@ -5,3 +5,4 @@ sudo cp /etc/hosts ~/hosts.new
 echo "127.0.0.2 localhost" | sudo tee -a ~/hosts.new >/dev/null
 echo "8.8.8.8 facebook.com" | sudo tee -a ~/hosts.new >/dev/null
 sudo cp -f ~/hosts.new /etc/hosts
+rm ~/hosts.new
