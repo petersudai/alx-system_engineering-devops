@@ -4,8 +4,8 @@
 apt-get update
 apt-get install -y nginx
 
-echo "Hello World!" > /usr/share/nginx/html/index.html
+echo "Hello World!" > /var/www/index.nginx.html
 
-service nginx restart
+service nginx start
 
 echo "Nginx installed and configured successfully."
