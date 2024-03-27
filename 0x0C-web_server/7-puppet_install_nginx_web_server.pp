@@ -35,15 +35,3 @@ server {
   require => Package['nginx'],
   notify  => Service['nginx'],
 }
-
-# restart nginx
-exec { 'restart service':
-  command => 'service nginx restart',
-  path    => '/usr/bin:/usr/sbin:/bin',
-}
-
-# start service nginx
-service { 'nginx':
-  ensure  => running,
-  require => Package['nginx'],
-}
