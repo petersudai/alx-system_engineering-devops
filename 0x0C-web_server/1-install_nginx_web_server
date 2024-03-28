@@ -8,6 +8,4 @@ sudo ufw allow 'Nginx HTTP'
 
 sudo echo "Hello World!" | sudo /var/www/index.html
 
-service nginx restart
-
-echo "Nginx installed and configured successfully."
+sudo service nginx restart
