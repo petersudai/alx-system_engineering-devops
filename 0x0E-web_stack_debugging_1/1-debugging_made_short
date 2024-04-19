@@ -2,5 +2,4 @@
 # configures a server to listen on port 80
 service nginx start
 curl 0:80
-service nginx status
-kill "$(pgrep 'nginx' | head -1)"
+service nginx status | grep "nginx is not running"
