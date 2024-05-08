@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-Queries Reddit API recursively & returns list containing titles of all hot articles
+Queries Reddit API recursively & returns list containing
+titles of all hot articles
 """
 
 import requests

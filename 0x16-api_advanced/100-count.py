@@ -29,12 +29,15 @@ def count_words(subreddit, word_list, after=None, word_count={}):
         for word in word_list:
             if f' {word.lower()} ' in f' {title} ':
                 word_count[word.lower()] = word_count.get(word.lower(), 0) + 1
-    
+
     after = data.get('after')
     if after:
         count_words(subreddit, word_list, after, word_count)
 
     else:
-        sorted_word_count = sorted(word_count.items(), key=lambda x: (-x[1], x[0]))
+        sorted_word_count = sorted(
+            word_count.items(),
+            key=lambda x: (-x[1], x[0])
+        )
         for word, count in sorted_word_count:
             print(f"{word}: {count}")
